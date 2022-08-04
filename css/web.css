@@ -11,6 +11,10 @@ a:hover {
   text-decoration: none;
 }
 
+select:hover {
+  cursor: pointer;
+}
+
 .text-purple {
   color: #5a4fcf;
 }
@@ -509,10 +513,6 @@ section#restaurant {
   border-radius: 12px;
   padding: 20px 24px;
   margin: 0px;
-}
-
-select:hover {
-  cursor: pointer;
 }
 
 /* section chef */

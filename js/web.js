@@ -18,7 +18,7 @@ AOS.init({
   duration: 1000,
 });
 
-$(".popular-restaurant").on("click", function () {
+$(".popular-restaurant").on("mouseover", function () {
   $(".popular-restaurant").removeClass("col-lg-4 active").addClass("col-lg-2");
   $(this).removeClass("col-lg-2").addClass("col-lg-4 active");
 });
