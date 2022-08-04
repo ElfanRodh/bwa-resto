@@ -1,0 +1,724 @@
+body {
+  background-color: #fafafa;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #232631;
+}
+
+a,
+a:hover {
+  color: #232631;
+  text-decoration: none;
+}
+
+.text-purple {
+  color: #5a4fcf;
+}
+
+.text-orange {
+  color: #ffb800;
+}
+
+.btn,
+.form-control,
+.form-select {
+  border: 0px !important;
+}
+
+.btn-check:focus + .btn,
+.btn:focus,
+.form-select:focus {
+  outline: 0;
+  box-shadow: unset !important;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+.row {
+  padding: 0px !important;
+}
+
+.navbar .navbar-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 30px;
+}
+
+.navbar .navbar-nav .nav-link {
+  position: relative;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 0;
+  color: #232631;
+}
+
+.navbar .navbar-nav .nav-item a.active:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #5a4fcf;
+  border-radius: 2px;
+  bottom: -2px;
+  left: 0;
+}
+
+.dropdown-toggle::after {
+  display: inline-block;
+  margin-left: 0.25em;
+  margin-top: -1em;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-left: 0;
+  content: url("data:image/svg+xml,%3Csvg width='9' height='6' viewBox='0 0 9 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.16488 0.726266C7.45488 0.426266 7.92488 0.426266 8.22488 0.716266C8.37488 0.866266 8.44488 1.05627 8.44488 1.25627C8.44488 1.44627 8.37488 1.63627 8.22488 1.77627L4.75488 5.26627C4.61488 5.40627 4.42488 5.48627 4.22488 5.48627C4.02488 5.48627 3.83488 5.40627 3.69488 5.26627L0.224878 1.77627C-0.0751221 1.48627 -0.0751221 1.01627 0.224878 0.716266C0.514878 0.426266 0.994878 0.426266 1.28488 0.726266L4.22488 3.67627L7.16488 0.726266Z' fill='%23232631'/%3E%3C/svg%3E%0A");
+}
+
+.dropdown-menu {
+  border: 0px;
+  border-radius: 24px;
+  padding: 12px 0px;
+}
+
+.dropdown-item {
+  position: relative;
+  padding: 20px 24px;
+}
+
+.dropdown-item:hover {
+  background-color: transparent;
+}
+
+.dropdown-item:hover::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: #5a4fcf;
+  border-radius: 2px;
+  bottom: -2px;
+  bottom: 10px;
+  left: 24px;
+}
+
+.form-control {
+  color: #858585;
+  background-color: #fff;
+  border-color: transparent;
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+
+.form-search {
+  padding: 16px 28px;
+  margin-right: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px !important;
+}
+
+.form-search .form-control {
+  color: #232631 !important;
+}
+
+.form-search .form-control::placeholder {
+  color: #858585 !important;
+}
+
+.btn-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 28px;
+  background: rgba(90, 79, 207, 0.1);
+  border-radius: 12px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #5a4fcf;
+}
+
+/* section ads */
+section#ads {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 60px;
+  margin-bottom: 120px;
+}
+
+.slider {
+  overflow-x: auto;
+  gap: 20px;
+}
+
+.img-slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 1208px !important;
+  height: 564px !important;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.owl-item {
+  left: -20px;
+}
+
+.owl-item > div .card-image-slider {
+  opacity: 0;
+  transition: all 1s;
+}
+
+.owl-item.active.center {
+  left: 0px;
+}
+
+.owl-item.active.center > div .card-image-slider {
+  opacity: 1;
+  left: -80px;
+}
+
+.owl-stage {
+  left: -25px;
+}
+
+.img-slide img {
+  position: relative;
+  width: 1128px !important;
+  background: #d9d9d9;
+  border-radius: 24px;
+}
+
+.img-mask {
+  position: absolute;
+  width: 1128px;
+  height: 564px;
+  background: #d9d9d9;
+  border-radius: 24px;
+}
+
+.card-image-slider {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  border: 0px;
+  border-radius: 24px;
+  background: #ffffff;
+  padding: 24px;
+  min-width: 390px;
+}
+
+.card-image-slider .card-rating {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffb800;
+}
+
+.card-image-slider .card-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #232631;
+  margin-bottom: 4px;
+}
+
+.card-image-slider .card-subtitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #656565;
+  margin-bottom: 4px;
+}
+
+.card-image-slider .card-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #656565;
+}
+
+.card-image-slider .btn {
+  margin-top: 34px;
+  margin-bottom: 12px;
+}
+
+.btn-orange {
+  justify-content: center;
+  align-items: center;
+  padding: 16px 28px;
+  height: 56px;
+  background: #fdc886;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #232631;
+  transition: all 0.5s;
+}
+
+.btn-orange:hover {
+  background-color: #ffb800;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+/* section why us */
+section#why-us {
+  margin-bottom: 120px;
+}
+
+.section-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #5a4fcf;
+}
+
+.section-subtitle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  color: #232631;
+}
+
+.section-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #656565;
+  text-align: justify;
+}
+
+.benefit {
+  margin-top: 41px;
+}
+
+.card-benefit {
+  background: #ffffff;
+  border-radius: 24px;
+  border: 0;
+  box-shadow: none;
+  min-height: 347px;
+  transition: all 0.5s;
+}
+
+.card-benefit .card-footer {
+  padding: 0;
+  border: 0;
+  border-radius: 12px 12px 24px 24px;
+  background-color: transparent;
+}
+
+.card-benefit:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.card-benefit:hover .btn-benefit {
+  background: #fdc886;
+}
+
+.benefit-icon {
+  width: 80px;
+  height: 80px;
+  background: rgba(253, 200, 134, 0.15);
+  border-radius: 54px;
+  padding: 11px;
+}
+
+.benefit-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #232631;
+}
+
+.benefit-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #656565;
+}
+
+.btn-benefit {
+  border-radius: 12px 12px 24px 24px;
+  padding: 24px;
+  width: 100%;
+  height: 100%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #232631;
+}
+
+/* section popular */
+section#popular {
+  margin-bottom: 120px;
+}
+
+section#popular .section-desc {
+  margin-top: 20px;
+}
+
+section#popular .btn {
+  margin-top: 56px;
+}
+
+.popular-restaurant {
+  cursor: pointer;
+  transition: all 0.5s !important;
+}
+
+.popular-restaurant > .card-restaurant > .card-restaurant-image {
+  opacity: 0;
+}
+.popular-restaurant.active > .card-restaurant > .card-restaurant-image {
+  opacity: 1;
+}
+
+.card-restaurant {
+  transition: all 0.5s;
+  border-radius: 25%;
+  height: 475px;
+}
+
+.card-restaurant img {
+  border-radius: 24px;
+  position: relative;
+  height: 475px;
+  object-fit: cover;
+}
+
+.card-restaurant-image {
+  position: absolute;
+  bottom: 1em;
+  left: 2%;
+  right: 2%;
+  border: 0px;
+  border-radius: 24px;
+  background: #ffffff;
+  padding: 24px;
+  transition: all 0.5s;
+}
+
+/* scale on hover */
+.card-restaurant-image:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.card-restaurant-image .card-rating {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffb800;
+}
+
+.card-restaurant-image .card-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 33px;
+  color: #232631;
+  margin-bottom: 4px;
+}
+
+.card-restaurant-image .card-subtitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #656565;
+  margin-bottom: 4px;
+}
+
+.card-restaurant-image .card-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #656565;
+}
+
+.card-restaurant-image .btn {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  display: flex;
+  margin: auto !important;
+}
+
+/* section restaurant */
+section#restaurant {
+  margin-bottom: 120px;
+}
+
+.input-group.form-restaurant {
+  gap: 6px;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  width: 275px;
+  height: 64px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  float: right;
+  padding-left: 24px;
+}
+
+.input-group.form-restaurant .input-group-text {
+  background-color: transparent;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.form-restaurant select {
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  padding: 20px 24px;
+  margin: 0px;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+/* section chef */
+section#chef {
+  margin-bottom: 120px;
+}
+
+section#chef .nav-tabs {
+  gap: 20px;
+  border: 0px;
+}
+section#chef .nav-link {
+  padding: 24px;
+  border-radius: 24px;
+  border: 0px;
+  transition: all 0.5s;
+}
+
+section#chef .nav-link:hover {
+  background: #ffffff;
+  transform: scale(1.05);
+  transition: all 0.5s;
+}
+
+section#chef .nav-link .text-category {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #656565;
+  margin-bottom: 6px;
+}
+
+section#chef .nav-link .text-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 33px;
+  color: #232631;
+  margin-bottom: 6px;
+}
+
+section#chef .nav-link .text-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #656565;
+  margin-bottom: 6px;
+}
+
+section#chef .chef-content {
+  padding-right: 40px;
+  padding-left: 60px;
+}
+
+section#chef .chef-tabs {
+  padding-left: 64px;
+}
+
+.card-chef {
+  border-radius: 25%;
+  min-height: 475px;
+}
+
+.card-chef img {
+  position: relative;
+  border-radius: 24px;
+}
+
+.card-chef-experience {
+  position: absolute;
+  top: 40px;
+  right: -40px;
+  border: 0px;
+  border-radius: 24px;
+  background: #ffffff;
+  padding: 30px 46px;
+}
+
+.card-chef-detail {
+  position: absolute;
+  bottom: 40px;
+  left: -60px;
+  border: 0px;
+  border-radius: 24px;
+  background: #ffffff;
+  padding: 30px 46px;
+}
+
+.card-chef-image .card-rating {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffb800;
+}
+
+.card-chef-image .card-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 33px;
+  color: #232631;
+  margin-bottom: 4px;
+}
+
+.card-chef-image .card-subtitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #656565;
+  margin-bottom: 4px;
+}
+
+.card-chef-image .card-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #656565;
+}
+
+.card-chef-image .btn {
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  display: flex;
+  margin: auto !important;
+}
+
+.chef-icon {
+  width: 80px;
+  height: 80px;
+  background: rgba(253, 200, 134, 0.15);
+  border-radius: 54px;
+  padding: 11px;
+  display: flex;
+}
+
+.chef-category {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #656565;
+  margin-bottom: 4px;
+}
+
+.chef-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #232631;
+}
+
+.chef-desc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #656565;
+}
+
+.img-chef-detail {
+  width: 96px;
+  height: 132px;
+  object-fit: cover;
+}
+
+.tab-pane.pulse {
+  transition: all 0.25s;
+}
+
+/* bounce animation */
+.tab-pane.pulse {
+  animation: pulse 1s;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.btn-detail {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: #fdc886;
+
+  transition: all 0.5s;
+}
+
+a.btn-detail:hover {
+  font-weight: 600;
+  transition: all 0.5s;
+  color: #ffb800;
+}
+
